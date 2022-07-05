@@ -48,6 +48,7 @@ public class touch : MonoBehaviour
                         obj = hit.transform.gameObject;
                         
                         //check selected last object enable  rotation
+                        //if you have leantouch you can use this code for rotate object
                         foreach(var allobjs in listobject )
                         {
                             allobjs.GetComponent<Lean.Touch.LeanTwistRotateAxis>().enabled = false;
